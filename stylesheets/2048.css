@@ -1,45 +1,46 @@
-/* line 1, ../sass/2048.scss */
 body {
-  font-family: "Microsoft YaHei";
-}
+  font-family: "Microsoft YaHei"; }
 
-/* line 4, ../sass/2048.scss */
 .grid-container {
   position: relative;
   width: 450px;
   height: 450px;
   background-color: #8f7a66;
   margin: 0 auto;
-  border-radius: 10px;
-}
-/* line 12, ../sass/2048.scss */
-.grid-container .grid-cell {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: #bbada0;
-  border-radius: 6px;
-  color: #ffffff;
-}
+  border-radius: 10px; }
+  .grid-container .grid-cell {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #bbada0;
+    border-radius: 6px;
+    color: #ffffff; }
+  .grid-container .gird-cell-num {
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: #ffffff;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 100px; }
 
-/* line 27, ../sass/2048.scss */
 header {
   font-size: 32px;
   text-align: center;
-  font-weight: bold;
-}
-/* line 31, ../sass/2048.scss */
-header a {
-  margin: 10px auto;
-  display: inline-block;
-  width: 120px;
-  height: 35px;
-  line-height: 35px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-  background-color: #8f7a66;
-}
+  font-weight: bold; }
+  header a {
+    margin: 10px auto;
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #8f7a66;
+    cursor: pointer; }

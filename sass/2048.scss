@@ -22,6 +22,20 @@ body{
     color: #ffffff;
 
   }
+
+  .gird-cell-num{
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    color: #ffffff;
+    font-size: 18px;
+
+    overflow: hidden;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 100px;
+  }
 }
 
 header{
@@ -39,5 +53,7 @@ header{
     color: #ffffff;
     font-size: 14px;
     background-color: #8f7a66;
+
+    cursor: pointer;
   }
 }
