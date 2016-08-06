@@ -51,14 +51,6 @@ function nospace( board ){
     return false;
 }
 
-function noBlockHorizontal(row,k,j,board){
-    for( let i = k+1; i < j; i++ ){
-        if(board[row][i] != 0){
-            return false;
-        }
-    }
-    return true;
-}
 
 function showNumberWithAnimation( i, j, n ){
 
@@ -76,10 +68,57 @@ function showNumberWithAnimation( i, j, n ){
     },50);
 }
 
-function showMoveAnimation(row,i,row,j){
-    var numberCell = $("#gird-cell-num-"+row+"-"+i);
+
+function showMoveAnimation(rowx, i, rowy, j) {
+    var numberCell = $("#gird-cell-num-" + rowx + "-" + i);
     numberCell.animate({
-        top: getTop(row,j),
-        left: getLeft(row,j)
+        top: getTop(rowy, j),
+        left: getLeft(rowy, j)
     },200);
 }
+function getNumberText(number) {
+    switch (number) {
+        case 2:
+            return "小白";
+            break;
+        case 4:
+            return "实习生";
+            break;
+        case 8:
+            return "程序猿";
+            break;
+        case 16:
+            return "项目经理";
+            break;
+        case 32:
+            return "架构师";
+            break;
+        case 64:
+            return "技术经理";
+            break;
+        case 128:
+            return "高级经理";
+            break;
+        case 256:
+            return "技术总监";
+            break;
+        case 512:
+            return "副总裁";
+            break;
+        case 1024:
+            return "CTO";
+            break;
+        case 2048:
+            return "总裁";
+            break;
+        case 4096:
+            return "#a6c";
+            break;
+        case 8192:
+            return "#93c";
+            break;
+    }
+
+    return "black";
+}
+
